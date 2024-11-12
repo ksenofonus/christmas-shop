@@ -1,5 +1,11 @@
+main {
+  background-image: url('../assets/images/bg-snow.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: $main-color;
+}
 .hero {
-  background-image: url('../assets/images/bg-ball.png'), url('../assets/images/bg-snow.png');
+  background-image: url('../assets/images/bg-ball.png');
   background-repeat: no-repeat, no-repeat;
   background-position: center center;
   background-size: cover;

@@ -97,7 +97,7 @@ button {
 }
 
 .header {
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,7 +151,6 @@ button {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #FF4646;
 }
 
 body {
@@ -169,8 +168,15 @@ ul {
   padding: 0 82px;
 }
 
+main {
+  background-image: url("../assets/images/bg-snow.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: #FF4646;
+}
+
 .hero {
-  background-image: url("../assets/images/bg-ball.png"), url("../assets/images/bg-snow.png");
+  background-image: url("../assets/images/bg-ball.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center center;
   background-size: cover;
