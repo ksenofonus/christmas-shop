@@ -10,3 +10,7 @@
 	line-height: 130%;
 	letter-spacing: 5%;
 }
+
+@mixin cursor {
+  cursor: url('../assets/images/icons/cursors.png'), pointer;
+}

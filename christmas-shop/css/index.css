@@ -92,7 +92,7 @@ button {
   letter-spacing: 5%;
 }
 .button:hover {
-  cursor: pointer;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
   background-color: #FFFFFF;
   color: #181C29;
 }
@@ -127,7 +127,7 @@ button {
   background-color: rgba(255, 70, 70, 0.1);
   color: #FF4646;
   border-radius: 12px;
-  cursor: pointer;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 
 .logo {
@@ -138,7 +138,7 @@ button {
   width: 141px;
 }
 .logo:hover {
-  cursor: pointer;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 .logo_text {
   font-family: Montserrat;
