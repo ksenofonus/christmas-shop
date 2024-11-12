@@ -7,14 +7,6 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
-  src: url("../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../assets/fonts/Montserrat/Montserrat-Bold.svg") format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Allura";
   src: url("../assets/fonts/allura/Allura-Regular.eot");
   src: url("../assets/fonts/allura/Allura-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/allura/Allura-Regular.woff2") format("woff2"), url("../assets/fonts/allura/Allura-Regular.woff") format("woff"), url("../assets/fonts/allura/Allura-Regular.ttf") format("truetype"), url("../assets/fonts/allura/Allura-Regular.svg#Allura-Regular") format("svg");
@@ -35,7 +27,9 @@ h1 {
   text-transform: uppercase;
   font-size: 32px;
   line-height: 150%;
-  letter-spacing: 18%;
+  letter-spacing: 0.18em;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 h2 {
@@ -44,7 +38,7 @@ h2 {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 152%;
-  letter-spacing: 16%;
+  letter-spacing: 0.16em;
 }
 
 h3 {
@@ -53,7 +47,7 @@ h3 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 152%;
-  letter-spacing: 8%;
+  letter-spacing: 0.08em;
 }
 
 h4 {
@@ -62,14 +56,19 @@ h4 {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 
 .caption {
   font-family: Allura;
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -166,6 +165,29 @@ ul {
   padding: 0;
 }
 
-.header, .main, .footer {
+.header, .section, .footer {
   padding: 0 82px;
+}
+
+.hero {
+  background-image: url("../assets/images/bg-ball.png"), url("../assets/images/bg-snow.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 426px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.hero_container .caption {
+  color: #FFFFFF;
+}
+.hero_container .caption__top {
+  order: -1;
 }

@@ -9,17 +9,7 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf') format("ttf");
-  src: url('../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
-      url('../assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
-      url('../assets/fonts/Montserrat/Montserrat-Bold.svg') format('svg');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+
 @font-face {
     font-family: 'Allura';
     src: url('../assets/fonts/allura/Allura-Regular.eot');
@@ -42,29 +32,35 @@ h1 {
  @include header-font;
  font-size: 32px;
  line-height: 150%;
- letter-spacing: 18%;
+ letter-spacing: 0.18em;
+ text-align: center;
+ color: $white;
 }
 h2 {
  @include header-font;
  font-size: 24px;
  line-height: 152%;
- letter-spacing: 16%;
+ letter-spacing: 0.16em;
 }
 h3 {
  @include header-font;
  font-size: 16px;
  line-height: 152%;
- letter-spacing: 8%;
+ letter-spacing: 0.08em;
 }
 h4 {
  @include header-font;
  font-size: 12px;
  line-height: 130%;
- letter-spacing: 5%;
+ letter-spacing: 0.05em;
 }
 .caption {
   font-family: Allura;
   font-size: 24px;
   line-height: 100%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
 }
