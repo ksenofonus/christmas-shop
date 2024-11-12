@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "modern-normalize": "^3.0.1"
   }
 }
