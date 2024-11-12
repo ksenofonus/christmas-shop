@@ -68,3 +68,9 @@ h4 {
   line-height: 100%;
   letter-spacing: 5%;
 }
+.action-small {
+@include header-font;
+font-size: 12px;
+line-height: 130%;
+letter-spacing: 5%;
+}
