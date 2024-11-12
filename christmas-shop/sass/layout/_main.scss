@@ -3,7 +3,7 @@ main {
 	background-repeat: repeat;
 	background-size: cover;
 	background-color: $main-color;
-  overflow: hidden;
+	overflow: hidden;
 }
 .section {
 	padding: 60px 82px;
@@ -23,7 +23,6 @@ main {
 		padding: 60px 0;
 		& .caption {
 			color: $white;
-			
 		}
 	}
 }
@@ -33,21 +32,24 @@ main {
 		width: 100%;
 		border-radius: 20px;
 		overflow: hidden;
-    background-color: $white;
+		background-color: $white;
 		& .caption {
 			color: $main-color;
 		}
 	}
 	&_text {
 		width: 50%;
-    padding: 100px 0 100px 60px;
+		padding: 100px 0 100px 60px;
 	}
-  &_content {
-    max-width: 426px;
-padding: 60px 0;
-@include flex-column;
-gap: 20px;
-  }
+	&_content {
+		max-width: 426px;
+		padding: 60px 0;
+		@include flex-column;
+		gap: 20px;
+		& > h2 {
+			color: $dark;
+		}
+	}
 	&_img {
 		width: 50%;
 		& > img {
@@ -59,22 +61,93 @@ gap: 20px;
 	}
 }
 .slider {
-  &-container {
-    @include flex-column;
+	&-container {
+		@include flex-column;
 		width: 100%;
-    gap: 20px;
-    overflow: visible;
-  }
-  &_title {
-    @include flex-column;
-    align-items: center;
-    color: $white;
-    gap: 12px;
-  }
-  &_buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-  }
+		gap: 20px;
+		overflow: visible;
+	}
+	&_title {
+		@include flex-column;
+		align-items: center;
+		color: $white;
+		gap: 12px;
+	}
+	&_buttons {
+		display: flex;
+		justify-content: flex-end;
+		gap: 20px;
+	}
 }
 
+.gifts {
+	&-container {
+		@include flex-column;
+		gap: 20px;
+		align-items: center;
+		& .caption {
+			color: $white;
+		}
+	}
+	&_title {
+		@include flex-column;
+		gap: 12px;
+		align-items: center;
+	}
+	&_content {
+		display: flex;
+		gap: 12px;
+	}
+	&_item {
+		width: 310px;
+		height: 342px;
+		@include flex-column;
+		border-radius: 20px;
+		background-color: $white;
+		overflow: hidden;
+		&.work {
+			& .gifts_function {
+				color: $tag-purple;
+			}
+			& .gifts_image {
+				background-image: url('../assets/images/gift-for-work.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+		}
+		&.harmony {
+			& .gifts_function {
+				color: $tag-pink;
+			}
+			& .gifts_image {
+				background-image: url('../assets/images/gift-for-harmony.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+		}
+		&.health {
+			& .gifts_function {
+				color: $tag-green;
+			}
+			& .gifts_image {
+				background-image: url('../assets/images/gift-for-health.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+		}
+	}
+	&_image {
+		width: 100%;
+		height: 230px;
+		background-color: $bcground-color;
+	}
+	&_description {
+		@include flex-column;
+		gap: 8px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+}
