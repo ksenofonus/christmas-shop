@@ -27,6 +27,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 148%;
+  color: $dark;
 }
 h1 {
  @include header-font;
@@ -63,4 +64,9 @@ h4 {
 h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
+}
+.slider_item__text {
+  @include header-font;
+  font-size: 80px;
+  color: $white;
 }

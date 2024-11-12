@@ -3,6 +3,7 @@ main {
 	background-repeat: repeat;
 	background-size: cover;
 	background-color: $main-color;
+  overflow: hidden;
 }
 .section {
 	padding: 60px 82px;
@@ -57,3 +58,23 @@ gap: 20px;
 		}
 	}
 }
+.slider {
+  &-container {
+    @include flex-column;
+		width: 100%;
+    gap: 20px;
+    overflow: visible;
+  }
+  &_title {
+    @include flex-column;
+    align-items: center;
+    color: $white;
+    gap: 12px;
+  }
+  &_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}
+

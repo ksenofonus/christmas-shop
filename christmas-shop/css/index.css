@@ -19,10 +19,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 148%;
+  color: #181C29;
 }
 
 h1 {
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 32px;
@@ -33,7 +33,6 @@ h1 {
 }
 
 h2 {
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 24px;
@@ -42,7 +41,6 @@ h2 {
 }
 
 h3 {
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
@@ -51,7 +49,6 @@ h3 {
 }
 
 h4 {
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
@@ -71,6 +68,13 @@ h1, h2, h3, h4, p {
   padding: 0;
 }
 
+.slider_item__text {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #FFFFFF;
+}
+
 button {
   padding: 0;
   margin: 0;
@@ -83,7 +87,6 @@ button {
   background-color: #181C29;
   border-radius: 20px;
   color: #FFFFFF;
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
@@ -94,6 +97,51 @@ button {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
   background-color: #FFFFFF;
   color: #181C29;
+}
+
+.slider_content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+.slider_item > img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.slider_button {
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+.slider_button svg > path {
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+}
+.slider_button__left {
+  rotate: 180deg;
+}
+.slider_button__disabled {
+  border-color: rgba(255, 255, 255, 0.4);
+  cursor: default;
+}
+.slider_button__disabled > svg {
+  opacity: 40%;
+}
+.slider_button:not(.slider_button__disabled):hover {
+  background-color: #FFFFFF;
+}
+.slider_button:not(.slider_button__disabled):hover svg > path {
+  stroke: #FF4646;
+  fill: #FF4646;
 }
 
 .header {
@@ -111,7 +159,6 @@ button {
   gap: 8px;
 }
 .main-menu_item {
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
@@ -140,7 +187,6 @@ button {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 .logo_text {
-  font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
@@ -177,6 +223,7 @@ main {
   background-repeat: repeat;
   background-size: cover;
   background-color: #FF4646;
+  overflow: hidden;
 }
 
 .section {
@@ -231,4 +278,24 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  overflow: visible;
+}
+.slider_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 12px;
+}
+.slider_buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
