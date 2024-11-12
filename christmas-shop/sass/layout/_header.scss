@@ -11,6 +11,7 @@
   display: flex;
   gap: 8px;
   &_item {
+    @include action-small;
     height: 100%;
     width: auto;
     padding: 20px 12px;
@@ -23,7 +24,7 @@
     }
   }
 }
-.header_logo {
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,5 +32,8 @@
   width: 141px;
   &:hover {
     cursor: pointer;
+  }
+  &_text {
+    @include action-small;
   }
 }

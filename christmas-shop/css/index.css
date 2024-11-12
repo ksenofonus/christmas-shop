@@ -72,13 +72,29 @@ h4 {
   letter-spacing: 5%;
 }
 
-.action-small {
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.button {
+  padding: 20px 32px;
+  background-color: #181C29;
+  border-radius: 20px;
+  color: #FFFFFF;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
   letter-spacing: 5%;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #181C29;
 }
 
 .header {
@@ -96,6 +112,12 @@ h4 {
   gap: 8px;
 }
 .main-menu_item {
+  font-family: Montserrat;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 5%;
   height: 100%;
   width: auto;
   padding: 20px 12px;
@@ -108,15 +130,23 @@ h4 {
   cursor: pointer;
 }
 
-.header_logo {
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   width: 141px;
 }
-.header_logo:hover {
+.logo:hover {
   cursor: pointer;
+}
+.logo_text {
+  font-family: Montserrat;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 5%;
 }
 
 .container {
