@@ -14,3 +14,8 @@
 @mixin cursor {
   cursor: url('../assets/images/icons/cursors.png'), pointer;
 }
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
