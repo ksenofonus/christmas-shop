@@ -1,0 +1,19 @@
+.footer {
+  &_contacts {
+    flex-basis: 35%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column-reverse;
+    background-color: $bcground-color;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  &_text {
+  color: $dark;
+  text-decoration: none;
+  @include action-large;
+  @include cursor;
+  }
+}
+

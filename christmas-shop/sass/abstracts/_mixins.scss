@@ -7,7 +7,13 @@
 	@include header-font;
 	font-size: 12px;
 	line-height: 130%;
-	letter-spacing: 5%;
+	letter-spacing: 0.05em;
+}
+@mixin action-large {
+	@include header-font;
+	font-size: 24px;
+	line-height: 152%;
+	letter-spacing: 0.16em;
 }
 
 @mixin cursor {

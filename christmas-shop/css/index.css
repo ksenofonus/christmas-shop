@@ -92,7 +92,7 @@ button {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 .button:hover {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
@@ -145,6 +145,27 @@ button {
   fill: #FF4646;
 }
 
+.footer_contacts {
+  flex-basis: 35%;
+  display: flex;
+  gap: 12px;
+  flex-direction: column-reverse;
+  background-color: #ECF3F8;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+.footer_text {
+  color: #181C29;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+
 .header {
   width: auto;
   display: flex;
@@ -164,7 +185,7 @@ button {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   height: 100%;
   width: auto;
   padding: 20px 12px;
@@ -192,7 +213,23 @@ button {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
+}
+
+.footer {
+  background-color: #FFFFFF;
+}
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 0;
+}
+.footer_top {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .container {
