@@ -1,5 +1,4 @@
 .footer {
-  background-color: $white;
   &_container {
   @include flex-column;
   gap: 60px;

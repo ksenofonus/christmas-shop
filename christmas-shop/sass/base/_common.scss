@@ -4,7 +4,7 @@ html {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  
+  background-color: $white;
 }
 body {
   background-color: $bcground-color;
@@ -28,4 +28,13 @@ li {
 }
 .main {
   background-color: $main-color;
+  border-radius: 20px;
+}
+.section {
+	padding: 60px 82px;
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
 }

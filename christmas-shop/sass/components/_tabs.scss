@@ -1,0 +1,17 @@
+.gifts_tabs {
+  display: flex;
+  gap: 8px;
+  background-color: $main-color;
+  & .gifts_tab {
+    @include action-small;
+    padding: 12px 20px;
+    background-color: $main-color;
+    color: $white;
+    border-radius: 20px;
+    @include cursor;
+    &__active {
+      background-color: $white20;
+      cursor: default;
+    }
+  }
+}
