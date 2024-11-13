@@ -5,7 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Home</title>
 		<link
 			rel="stylesheet"
 			href="./node_modules/modern-normalize/modern-normalize.css" />
@@ -16,19 +16,19 @@
 	<body>
 		<div class="container">
 			<header class="header">
-				<div class="logo header_logo">
+				<a class="logo header_logo" href="javascript:void(0);">
 					<img
 						src="./assets/images/icons/snowflake.svg"
 						alt="snow"
 						class="logo_icon" />
 					<span class="logo_text">the gifts</span>
-				</div>
+				</a>
 				<nav class="main-nav">
 					<ul class="main-menu">
-						<li class="main-menu_item">gifts</li>
-						<li class="main-menu_item">about</li>
-						<li class="main-menu_item">best</li>
-						<li class="main-menu_item">contacts</li>
+						<li class="main-menu_item"><a href="./gifts.html">gifts</a></li>
+						<li class="main-menu_item"><a href="#about">about</a></li>
+						<li class="main-menu_item"><a href="#best">best</a></li>
+						<li class="main-menu_item"><a href="#contacts">contacts</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -134,7 +134,7 @@
 				</section>
 				<section
 					class="section gifts"
-					id="gifts">
+					id="best">
 					<div class="gifts-container">
 						<div class="gifts_title">
 							<h2 class="section-title">especially for you</h2>
@@ -206,7 +206,9 @@
 			</main>
 			<footer class="footer">
 				<div class="footer_container">
-					<div class="footer_top">
+					<div
+						class="footer_top"
+						id="contacts">
 						<div class="footer_contacts footer_phone">
 							<h3 footer_title>call us</h3>
 							<a
