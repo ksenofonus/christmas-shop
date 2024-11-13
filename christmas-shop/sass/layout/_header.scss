@@ -15,7 +15,7 @@
     height: 100%;
     width: auto;
     padding: 20px 12px;
-    transition: all 0.5s ease;
+    @include transition5;
     &:hover {
       background-color: $main-color10;
       color: $main-color;

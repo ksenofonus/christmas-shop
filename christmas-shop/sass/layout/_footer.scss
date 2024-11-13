@@ -11,5 +11,23 @@
     width: 100%;
     justify-content: space-between;
   }
+  &_bottom {
+    @include flex-column;
+    align-items: center;
+    gap: 12px;
+  }
+  &_media {
+    display: flex;
+    gap: 12px;
+  }
+  &_school-link {
+    text-decoration: none;
+    color: $dark;
+    @include transition5;
+    @include cursor;
+    &:hover {
+      color: $main-color;
+    }
+  }
 }
 

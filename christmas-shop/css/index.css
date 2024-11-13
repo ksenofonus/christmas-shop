@@ -166,6 +166,19 @@ button {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 
+.media_item > a {
+  display: block;
+  padding: 8px;
+  width: 100%;
+  line-height: 100%;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+  transition: all 0.5s ease;
+}
+.media_item > a:hover svg > path {
+  transition: all 0.5s ease;
+  stroke: #FF4646;
+}
+
 .header {
   width: auto;
   display: flex;
@@ -231,6 +244,25 @@ button {
   width: 100%;
   justify-content: space-between;
 }
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.footer_media {
+  display: flex;
+  gap: 12px;
+}
+.footer_school-link {
+  text-decoration: none;
+  color: #181C29;
+  transition: all 0.5s ease;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+.footer_school-link:hover {
+  color: #FF4646;
+}
 
 .container {
   max-width: 1440px;
@@ -246,6 +278,11 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
 }
 
 .header, .section, .footer {
