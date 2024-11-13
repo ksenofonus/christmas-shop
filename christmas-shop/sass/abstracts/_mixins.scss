@@ -7,7 +7,7 @@
 	@include header-font;
 	font-size: 12px;
 	line-height: 130%;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.06em;
 }
 @mixin action-large {
 	@include header-font;
@@ -26,4 +26,10 @@
 }
 @mixin transition5 {
 	transition: all 0.5s ease;
+}
+@mixin snow {
+	background-image: url('../assets/images/bg-snow.png');
+	background-repeat: no-repeat;
+	background-position: center, left;
+	background-size: cover, cover;
 }

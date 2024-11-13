@@ -3,8 +3,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
-	width: 141px;
-
+  padding: 8px 20px;
+	@include action-small;
 	&:hover {
 		@include cursor;
 	}

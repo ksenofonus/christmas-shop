@@ -1,10 +1,14 @@
 .header {
-	width: auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 12px 8px;
-	text-transform: uppercase;
+	&-container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-transform: uppercase;
+	}
+
 	& a {
 		text-decoration: none;
 		color: $dark;
@@ -15,10 +19,10 @@
 	gap: 8px;
 	&_item a {
 		@include action-small;
-    display: block;
+		display: block;
 		height: 100%;
 		width: auto;
-		padding: 20px 12px;
+		padding: 12px 20px;
 		@include transition5;
 		&:hover {
 			background-color: $main-color10;
@@ -28,4 +32,3 @@
 		}
 	}
 }
-

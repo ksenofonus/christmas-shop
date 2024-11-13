@@ -15,7 +15,7 @@
   font-display: swap;
 }
 body {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 148%;
@@ -72,7 +72,8 @@ h1, h2, h3, h4, p {
 .slider_item__text {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 76px;
+  letter-spacing: 0.05em;
   color: #FFFFFF;
 }
 
@@ -92,7 +93,7 @@ button {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 .button:hover {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
@@ -170,7 +171,7 @@ button {
   display: block;
   padding: 8px;
   width: 100%;
-  line-height: 100%;
+  line-height: 0;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
   transition: all 0.5s ease;
 }
@@ -238,7 +239,12 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 141px;
+  padding: 8px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 }
 .logo:hover {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
@@ -248,15 +254,16 @@ button {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
-.header {
-  width: auto;
+.header-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-transform: uppercase;
 }
 .header a {
@@ -273,11 +280,11 @@ button {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   display: block;
   height: 100%;
   width: auto;
-  padding: 20px 12px;
+  padding: 12px 20px;
   transition: all 0.5s ease;
 }
 .main-menu_item a:hover {
@@ -365,14 +372,10 @@ li {
 button {
   padding: 0;
   margin: 0;
-  border: none;
+  border: 0;
 }
 
 .main_home {
-  background-image: url("../assets/images/bg-snow.png");
-  background-repeat: repeat;
-  background-position: center left;
-  background-size: contain;
   overflow: hidden;
 }
 
@@ -381,10 +384,10 @@ button {
 }
 
 .hero {
-  background-image: url("../assets/images/bg-ball.png");
+  background-image: url("../assets/images/bg-ball.png"), url("../assets/images/bg-snow.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center, left;
+  background-size: cover, cover;
 }
 .hero_container {
   display: flex;
@@ -399,6 +402,12 @@ button {
   color: #FFFFFF;
 }
 
+.about {
+  background-image: url("../assets/images/bg-snow.png");
+  background-repeat: no-repeat;
+  background-position: center, left;
+  background-size: cover, cover;
+}
 .about-container {
   display: flex;
   width: 100%;
@@ -433,6 +442,12 @@ button {
   border-radius: 20px;
 }
 
+.slider {
+  background-image: url("../assets/images/bg-snow.png");
+  background-repeat: no-repeat;
+  background-position: center, left;
+  background-size: cover, cover;
+}
 .slider-container {
   display: flex;
   flex-direction: column;
@@ -453,6 +468,12 @@ button {
   gap: 20px;
 }
 
+.gifts {
+  background-image: url("../assets/images/bg-snow.png");
+  background-repeat: no-repeat;
+  background-position: center, left;
+  background-size: cover, cover;
+}
 .gifts-container {
   display: flex;
   flex-direction: column;
@@ -470,10 +491,10 @@ button {
 }
 
 .cta {
-  background-image: url("../assets/images/bg-forest.png");
+  background-image: url("../assets/images/bg-forest.png"), url("../assets/images/bg-snow.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  background-position: left, center;
+  background-size: cover, cover;
 }
 .cta-container {
   display: flex;

@@ -1,18 +1,15 @@
 .main_home {
-	background-image: url('../assets/images/bg-snow.png');
-	background-repeat: repeat;
-	background-position: center left;
-	background-size: contain;
+	
 	overflow: hidden;
 }
 .section {
 	padding: 60px 82px;
 }
 .hero {
-	background-image: url('../assets/images/bg-ball.png');
+	background-image: url('../assets/images/bg-ball.png'), url('../assets/images/bg-snow.png');
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background-position: center, left;
+	background-size: cover, cover;
 	&_container {
 		@include flex-column;
 		align-items: center;
@@ -26,6 +23,7 @@
 	}
 }
 .about {
+	@include snow;
 	&-container {
 		display: flex;
 		width: 100%;
@@ -60,6 +58,7 @@
 	}
 }
 .slider {
+	@include snow;
 	&-container {
 		@include flex-column;
 		width: 100%;
@@ -80,6 +79,7 @@
 }
 
 .gifts {
+	@include snow;
 	&-container {
 		@include flex-column;
 		gap: 20px;
@@ -95,10 +95,11 @@
 	}
 }
 .cta {
-	background-image: url('../assets/images/bg-forest.png');
+	
+	background-image: url('../assets/images/bg-forest.png'), url('../assets/images/bg-snow.png');
 	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: cover;
+	background-position: left, center;
+	background-size: cover, cover;
 	&-container {
 		@include flex-column;
 		align-items: center;

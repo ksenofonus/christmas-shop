@@ -3,7 +3,7 @@
     display: block;
     padding: 8px;
     width: 100%;
-    line-height: 100%;
+    line-height: 0;
     @include cursor;
     @include transition5;
     &:hover svg  > path{
