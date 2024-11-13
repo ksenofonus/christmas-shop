@@ -110,6 +110,24 @@ h1, h2, h3, h4, p {
   stroke: #FF4646;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 141px;
+}
+.logo:hover {
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+.logo_text {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
 .header {
   width: auto;
   display: flex;
@@ -147,22 +165,41 @@ h1, h2, h3, h4, p {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 
-.logo {
+.header {
+  width: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 12px 8px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+.header a {
+  text-decoration: none;
+  color: #181C29;
+}
+
+.main-menu {
+  display: flex;
   gap: 8px;
-  width: 141px;
 }
-.logo:hover {
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
-}
-.logo_text {
+.main-menu_item a {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 130%;
   letter-spacing: 0.05em;
+  display: block;
+  height: 100%;
+  width: auto;
+  padding: 20px 12px;
+  transition: all 0.5s ease;
+}
+.main-menu_item a:hover {
+  background-color: rgba(255, 70, 70, 0.1);
+  color: #FF4646;
+  border-radius: 12px;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 
 .footer {

@@ -179,6 +179,24 @@ button {
   stroke: #FF4646;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 141px;
+}
+.logo:hover {
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+.logo_text {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
 .header {
   width: auto;
   display: flex;
@@ -214,24 +232,6 @@ button {
   color: #FF4646;
   border-radius: 12px;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 141px;
-}
-.logo:hover {
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
-}
-.logo_text {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.05em;
 }
 
 .footer {

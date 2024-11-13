@@ -1,0 +1,14 @@
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 141px;
+
+	&:hover {
+		@include cursor;
+	}
+	&_text {
+		@include action-small;
+	}
+}
