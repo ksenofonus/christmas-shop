@@ -7,7 +7,7 @@
     padding: 12px 20px;
     background-color: $main-color;
     color: $white;
-    border-radius: 20px;
+    border-radius: 12px;
     @include cursor;
     &__active {
       background-color: $white20;

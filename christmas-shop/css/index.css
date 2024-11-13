@@ -296,12 +296,18 @@ button {
   width: auto;
   padding: 12px 20px;
   transition: all 0.5s ease;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 .main-menu_item a:hover {
   background-color: rgba(255, 70, 70, 0.1);
   color: #FF4646;
   border-radius: 12px;
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+.main-menu_item__active a {
+  background-color: rgba(255, 70, 70, 0.1);
+  color: #FF4646;
+  border-radius: 12px;
+  cursor: default;
 }
 
 .footer_container {
@@ -347,7 +353,7 @@ html {
 }
 
 body {
-  background-color: #ECF3F8;
+  background-color: #FFFFFF;
   max-width: 100vw;
 }
 
