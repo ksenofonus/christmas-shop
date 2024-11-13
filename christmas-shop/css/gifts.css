@@ -7,6 +7,14 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("ttf");
+  src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../assets/fonts/Montserrat/Montserrat-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Allura";
   src: url("../assets/fonts/allura/Allura-Regular.eot");
   src: url("../assets/fonts/allura/Allura-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/allura/Allura-Regular.woff2") format("woff2"), url("../assets/fonts/allura/Allura-Regular.woff") format("woff"), url("../assets/fonts/allura/Allura-Regular.ttf") format("truetype"), url("../assets/fonts/allura/Allura-Regular.svg#Allura-Regular") format("svg");
@@ -18,7 +26,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 148%;
+  line-height: 1.48;
   color: #181C29;
 }
 
@@ -26,7 +34,7 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 32px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.18em;
   text-align: center;
   color: #FFFFFF;
@@ -36,7 +44,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 24px;
-  line-height: 152%;
+  line-height: 36px;
   letter-spacing: 0.16em;
   color: #FFFFFF;
 }
@@ -45,7 +53,7 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 152%;
+  line-height: 24px;
   letter-spacing: 0.08em;
 }
 
@@ -53,14 +61,14 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 130%;
+  line-height: 16px;
   letter-spacing: 0.05em;
 }
 
 .caption {
   font-family: Allura;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 24px;
   letter-spacing: 0.05em;
 }
 
@@ -72,9 +80,9 @@ h1, h2, h3, h4, p {
 .slider_item__text {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 76px;
-  letter-spacing: 0.05em;
+  font-size: 80px;
   color: #FFFFFF;
+  line-height: 93px;
 }
 
 .footer_contacts {
@@ -120,8 +128,8 @@ h1, h2, h3, h4, p {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
 }
 .logo:hover {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
@@ -130,8 +138,8 @@ h1, h2, h3, h4, p {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
 }
 
 .gifts_content {
@@ -197,8 +205,8 @@ h1, h2, h3, h4, p {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   padding: 12px 20px;
   background-color: #FF4646;
   color: #FFFFFF;
@@ -232,8 +240,8 @@ h1, h2, h3, h4, p {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   display: block;
   height: 100%;
   width: auto;
@@ -269,8 +277,8 @@ h1, h2, h3, h4, p {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   display: block;
   height: 100%;
   width: auto;

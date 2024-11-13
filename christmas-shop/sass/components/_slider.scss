@@ -3,7 +3,9 @@
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
-		gap: 20px;
+		justify-content: space-between;
+		gap: 21px;
+		width: 1193px;
 	}
 	&_item {
 		& > img {
@@ -11,6 +13,8 @@
 			width: 200px;
 			height: 200px;
 			border-radius: 20px;
+		}
+		&__text {
 		}
 	}
 	&_button {
@@ -23,10 +27,10 @@
 		align-items: center;
 		justify-content: center;
 		@include cursor;
-    & svg > path{
-stroke: $white;
-fill: $white;
-    }
+		& svg > path {
+			stroke: $white;
+			fill: $white;
+		}
 		&__left {
 			rotate: 180deg;
 		}
@@ -37,12 +41,12 @@ fill: $white;
 				opacity: 40%;
 			}
 		}
-    &:not(.slider_button__disabled):hover {
-      background-color: $white;
-      & svg > path{
-stroke: $main-color;
-fill: $main-color;
-    }
-    }
+		&:not(.slider_button__disabled):hover {
+			background-color: $white;
+			& svg > path {
+				stroke: $main-color;
+				fill: $main-color;
+			}
+		}
 	}
 }

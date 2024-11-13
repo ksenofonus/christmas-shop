@@ -6,8 +6,8 @@
 @mixin action-small {
 	@include header-font;
 	font-size: 12px;
-	line-height: 130%;
-	letter-spacing: 0.06em;
+	line-height: 16px;
+	letter-spacing: 0.05em;
 }
 @mixin action-large {
 	@include header-font;
