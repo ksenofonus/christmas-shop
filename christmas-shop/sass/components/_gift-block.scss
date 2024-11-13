@@ -1,0 +1,58 @@
+.gifts {
+	&_content {
+		display: flex;
+		gap: 12px;
+	}
+	&_item {
+		width: 310px;
+		height: 342px;
+		@include flex-column;
+		border-radius: 20px;
+		background-color: $white;
+		overflow: hidden;
+		&.work {
+			& .gifts_function {
+				color: $tag-purple;
+			}
+			& .gifts_image {
+				background-image: url('../assets/images/gift-for-work.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+		}
+		&.harmony {
+			& .gifts_function {
+				color: $tag-pink;
+			}
+			& .gifts_image {
+				background-image: url('../assets/images/gift-for-harmony.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+		}
+		&.health {
+			& .gifts_function {
+				color: $tag-green;
+			}
+			& .gifts_image {
+				background-image: url('../assets/images/gift-for-health.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+		}
+	}
+	&_image {
+		width: 100%;
+		height: 230px;
+		background-color: $bcground-color;
+	}
+	&_description {
+		@include flex-column;
+		gap: 8px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+}

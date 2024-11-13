@@ -179,6 +179,59 @@ button {
   stroke: #FF4646;
 }
 
+.gifts_content {
+  display: flex;
+  gap: 12px;
+}
+.gifts_item {
+  width: 310px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+.gifts_item.work .gifts_function {
+  color: #4361FF;
+}
+.gifts_item.work .gifts_image {
+  background-image: url("../assets/images/gift-for-work.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.gifts_item.harmony .gifts_function {
+  color: #FF43F7;
+}
+.gifts_item.harmony .gifts_image {
+  background-image: url("../assets/images/gift-for-harmony.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.gifts_item.health .gifts_function {
+  color: #06A44F;
+}
+.gifts_item.health .gifts_image {
+  background-image: url("../assets/images/gift-for-health.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.gifts_image {
+  width: 100%;
+  height: 230px;
+  background-color: #ECF3F8;
+}
+.gifts_description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -401,58 +454,6 @@ main {
   flex-direction: column;
   gap: 12px;
   align-items: center;
-}
-.gifts_content {
-  display: flex;
-  gap: 12px;
-}
-.gifts_item {
-  width: 310px;
-  height: 342px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  background-color: #FFFFFF;
-  overflow: hidden;
-}
-.gifts_item.work .gifts_function {
-  color: #4361FF;
-}
-.gifts_item.work .gifts_image {
-  background-image: url("../assets/images/gift-for-work.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.gifts_item.harmony .gifts_function {
-  color: #FF43F7;
-}
-.gifts_item.harmony .gifts_image {
-  background-image: url("../assets/images/gift-for-harmony.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.gifts_item.health .gifts_function {
-  color: #06A44F;
-}
-.gifts_item.health .gifts_image {
-  background-image: url("../assets/images/gift-for-health.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.gifts_image {
-  width: 100%;
-  height: 230px;
-  background-color: #ECF3F8;
-}
-.gifts_description {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 
 .cta-container {
