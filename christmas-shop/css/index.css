@@ -355,11 +355,15 @@ li {
   order: -1;
 }
 
-main {
+.main {
+  background-color: #FF4646;
+}
+
+.main_home {
   background-image: url("../assets/images/bg-snow.png");
   background-repeat: repeat;
-  background-size: cover;
-  background-color: #FF4646;
+  background-position: center left;
+  background-size: contain;
   overflow: hidden;
 }
 
@@ -369,7 +373,7 @@ main {
 
 .hero {
   background-image: url("../assets/images/bg-ball.png");
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -456,6 +460,12 @@ main {
   align-items: center;
 }
 
+.cta {
+  background-image: url("../assets/images/bg-forest.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
 .cta-container {
   display: flex;
   flex-direction: column;
@@ -463,7 +473,7 @@ main {
   gap: 20px;
   max-width: 426px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 120px 0 60px;
 }
 .cta-container h2 {
   text-align: center;

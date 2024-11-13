@@ -1,8 +1,8 @@
-main {
+.main_home {
 	background-image: url('../assets/images/bg-snow.png');
 	background-repeat: repeat;
-	background-size: cover;
-	background-color: $main-color;
+	background-position: center left;
+	background-size: contain;
 	overflow: hidden;
 }
 .section {
@@ -10,7 +10,7 @@ main {
 }
 .hero {
 	background-image: url('../assets/images/bg-ball.png');
-	background-repeat: no-repeat, no-repeat;
+	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	&_container {
@@ -95,13 +95,17 @@ main {
 	}
 }
 .cta {
+	background-image: url('../assets/images/bg-forest.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
 	&-container {
 		@include flex-column;
 		align-items: center;
 		gap: 20px;
 		max-width: 426px;
 		margin: 0 auto;
-		padding: 60px 0;
+		padding: 120px 0 60px;
 		& h2 {
 			text-align: center;
 		}

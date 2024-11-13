@@ -322,3 +322,7 @@ li {
 .caption__top {
   order: -1;
 }
+
+.main {
+  background-color: #FF4646;
+}
