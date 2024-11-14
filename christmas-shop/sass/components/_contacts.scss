@@ -10,6 +10,7 @@
 		padding: 20px;
 		@include cursor;
 		@include transition5;
+		
 		&:hover {
 			@media (hover: hover) {
 				color: $main-color;
@@ -18,5 +19,6 @@
 	}
 	&_text {
 		@include action-large;
+		white-space: nowrap;
 	}
 }

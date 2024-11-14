@@ -36,11 +36,12 @@
 	}
 	&_text {
 		width: 50%;
-		padding: 100px 0 100px 60px;
+		padding: 0 60px;
+		@include flex-column;
+		justify-content: center;
 	}
 	&_content {
 		max-width: 426px;
-		padding: 60px 0;
 		@include flex-column;
 		gap: 20px;
 		& > h2 {

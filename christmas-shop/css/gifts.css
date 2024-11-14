@@ -109,6 +109,7 @@ h1, h2, h3, h4, p {
   font-size: 24px;
   line-height: 152%;
   letter-spacing: 0.16em;
+  white-space: nowrap;
 }
 
 .media_item > a {
@@ -162,6 +163,7 @@ h1, h2, h3, h4, p {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
 }
 .gifts_item {
   width: 310px;
@@ -335,6 +337,9 @@ h1, h2, h3, h4, p {
   cursor: default;
 }
 
+.footer {
+  padding: 0;
+}
 .footer_container {
   display: flex;
   flex-direction: column;
@@ -346,6 +351,11 @@ h1, h2, h3, h4, p {
   gap: 12px;
   width: 100%;
   justify-content: space-between;
+}
+@media screen and (max-width: 1149px) {
+  .footer_top {
+    flex-direction: column;
+  }
 }
 .footer_bottom {
   display: flex;
