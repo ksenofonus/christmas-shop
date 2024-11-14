@@ -302,7 +302,6 @@ h1, h2, h3, h4, p {
   line-height: 16px;
   letter-spacing: 0.05em;
   display: block;
-  height: 100%;
   width: auto;
   padding: 12px 20px;
   transition: all 0.5s ease;
@@ -364,7 +363,7 @@ html {
 
 body {
   background-color: #FFFFFF;
-  width: 100%;
+  overflow: hidden;
 }
 
 ul {
