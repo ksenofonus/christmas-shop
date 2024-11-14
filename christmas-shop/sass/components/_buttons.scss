@@ -1,15 +1,13 @@
-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  @include transition5;
-}
+
 .button {
+  display: block;
   padding: 20px 32px;
   background-color: $dark;
   border-radius: 20px;
   color: $white;
+  text-decoration: none;
   @include action-small;
+  @include transition5;
   &:hover {
     @include cursor;
     background-color: $white;
