@@ -1,4 +1,12 @@
 .gifts {
+	
+	&_name {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		@include transition5;
+	}
 	&_content {
 		display: flex;
 		flex-wrap: wrap;
@@ -11,6 +19,11 @@
 		border-radius: 20px;
 		background-color: $white;
 		overflow: hidden;
+		@include transition5;
+		@include cursor;
+		&:hover .gifts_name {
+color: $main-color;
+	}
 		&.work {
 			& .gifts_function {
 				color: $tag-purple;
@@ -20,6 +33,8 @@
 				background-repeat: no-repeat;
 				background-position: center;
 				background-size: contain;
+				width: 310px;
+		height: 230px;
 			}
 		}
 		&.harmony {
@@ -53,7 +68,6 @@
 	&_description {
 		@include flex-column;
 		gap: 8px;
-		padding-top: 20px;
-		padding-left: 20px;
+		padding: 20px;
 	}
 }

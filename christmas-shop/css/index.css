@@ -186,6 +186,13 @@ h1, h2, h3, h4, p {
   stroke: #FF4646;
 }
 
+.gifts_name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
 .gifts_content {
   display: flex;
   flex-wrap: wrap;
@@ -199,6 +206,11 @@ h1, h2, h3, h4, p {
   border-radius: 20px;
   background-color: #FFFFFF;
   overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+.gifts_item:hover .gifts_name {
+  color: #FF4646;
 }
 .gifts_item.work .gifts_function {
   color: #4361FF;
@@ -208,6 +220,8 @@ h1, h2, h3, h4, p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  width: 310px;
+  height: 230px;
 }
 .gifts_item.harmony .gifts_function {
   color: #FF43F7;
@@ -236,8 +250,7 @@ h1, h2, h3, h4, p {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .logo {
