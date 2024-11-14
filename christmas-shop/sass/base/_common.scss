@@ -1,0 +1,47 @@
+html {
+	scroll-behavior: smooth;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: $white;
+}
+body {
+	background-color: $white;
+	width: 100%;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	padding: 0;
+	margin: 0;
+}
+.header,
+.section,
+.footer {
+	padding: 0 82px;
+}
+
+.caption__top {
+	order: -1;
+}
+.main {
+	background-color: $main-color;
+	border-radius: 20px;
+}
+.section {
+	padding: 60px 82px;
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  @include transition5;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+}
