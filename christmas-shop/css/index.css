@@ -363,7 +363,7 @@ html {
 
 body {
   background-color: #FFFFFF;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul {
