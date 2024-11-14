@@ -152,7 +152,7 @@ h1, h2, h3, h4, p {
 }
 
 .footer_contacts {
-  flex-basis: 35%;
+  flex-basis: 33.3333333333%;
   display: flex;
   gap: 12px;
   flex-direction: column-reverse;
