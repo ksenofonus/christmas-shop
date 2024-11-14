@@ -1,5 +1,4 @@
 .gifts {
-	
 	&_name {
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
@@ -22,8 +21,10 @@
 		@include transition5;
 		@include cursor;
 		&:hover .gifts_name {
-color: $main-color;
-	}
+			@media (hover: hover) {
+				color: $main-color;
+			}
+		}
 		&.work {
 			& .gifts_function {
 				color: $tag-purple;
@@ -34,7 +35,7 @@ color: $main-color;
 				background-position: center;
 				background-size: contain;
 				width: 310px;
-		height: 230px;
+				height: 230px;
 			}
 		}
 		&.harmony {

@@ -99,10 +99,12 @@ h1, h2, h3, h4, p {
   letter-spacing: 0.05em;
   transition: all 0.5s ease;
 }
-.button:hover {
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
-  background-color: #FFFFFF;
-  color: #181C29;
+@media (hover: hover) {
+  .button:hover {
+    cursor: url("../assets/images/icons/cursors.png"), pointer;
+    background-color: #FFFFFF;
+    color: #181C29;
+  }
 }
 
 .slider_content {
@@ -144,12 +146,14 @@ h1, h2, h3, h4, p {
 .slider_button__disabled > svg {
   opacity: 40%;
 }
-.slider_button:not(.slider_button__disabled):hover {
-  background-color: #FFFFFF;
-}
-.slider_button:not(.slider_button__disabled):hover svg > path {
-  stroke: #FF4646;
-  fill: #FF4646;
+@media (hover: hover) {
+  .slider_button:not(.slider_button__disabled):hover {
+    background-color: #FFFFFF;
+  }
+  .slider_button:not(.slider_button__disabled):hover svg > path {
+    stroke: #FF4646;
+    fill: #FF4646;
+  }
 }
 
 .footer_contacts {
@@ -164,8 +168,10 @@ h1, h2, h3, h4, p {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
   transition: all 0.5s ease;
 }
-.footer_contacts:hover {
-  color: #FF4646;
+@media (hover: hover) {
+  .footer_contacts:hover {
+    color: #FF4646;
+  }
 }
 .footer_text {
   font-weight: 600;
@@ -183,9 +189,11 @@ h1, h2, h3, h4, p {
   cursor: url("../assets/images/icons/cursors.png"), pointer;
   transition: all 0.5s ease;
 }
-.media_item > a:hover svg > path {
-  transition: all 0.5s ease;
-  stroke: #FF4646;
+@media (hover: hover) {
+  .media_item > a:hover svg > path {
+    transition: all 0.5s ease;
+    stroke: #FF4646;
+  }
 }
 
 .gifts_name {
@@ -211,8 +219,10 @@ h1, h2, h3, h4, p {
   transition: all 0.5s ease;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
-.gifts_item:hover .gifts_name {
-  color: #FF4646;
+@media (hover: hover) {
+  .gifts_item:hover .gifts_name {
+    color: #FF4646;
+  }
 }
 .gifts_item.work .gifts_function {
   color: #4361FF;
@@ -267,8 +277,10 @@ h1, h2, h3, h4, p {
   line-height: 16px;
   letter-spacing: 0.05em;
 }
-.logo:hover {
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
+@media (hover: hover) {
+  .logo:hover {
+    cursor: url("../assets/images/icons/cursors.png"), pointer;
+  }
 }
 .logo_text {
   font-weight: 600;
@@ -308,10 +320,12 @@ h1, h2, h3, h4, p {
   transition: all 0.5s ease;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
-.main-menu_item a:hover {
-  background-color: rgba(255, 70, 70, 0.1);
-  color: #FF4646;
-  border-radius: 12px;
+@media (hover: hover) {
+  .main-menu_item a:hover {
+    background-color: rgba(255, 70, 70, 0.1);
+    color: #FF4646;
+    border-radius: 12px;
+  }
 }
 .main-menu_item__active a {
   background-color: rgba(255, 70, 70, 0.1);
@@ -348,8 +362,10 @@ h1, h2, h3, h4, p {
   transition: all 0.5s ease;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
-.footer_school-link:hover {
-  color: #FF4646;
+@media (hover: hover) {
+  .footer_school-link:hover {
+    color: #FF4646;
+  }
 }
 
 html {

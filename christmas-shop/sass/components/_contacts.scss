@@ -1,21 +1,22 @@
 .footer {
-  &_contacts {
-    flex-basis: calc(100%/3);
-    display: flex;
-    gap: 12px;
-    flex-direction: column-reverse;
-    background-color: $bcground-color;
-    align-items: center;
-    border-radius: 20px;
-    padding: 20px;
-    @include cursor;
-    @include transition5;
-    &:hover {
-      color: $main-color;
-    }
-  }
-  &_text {
-  @include action-large;
-  }
+	&_contacts {
+		flex-basis: calc(100% / 3);
+		display: flex;
+		gap: 12px;
+		flex-direction: column-reverse;
+		background-color: $bcground-color;
+		align-items: center;
+		border-radius: 20px;
+		padding: 20px;
+		@include cursor;
+		@include transition5;
+		&:hover {
+			@media (hover: hover) {
+				color: $main-color;
+			}
+		}
+	}
+	&_text {
+		@include action-large;
+	}
 }
-

@@ -7,8 +7,10 @@
 		@include cursor;
 		@include transition5;
 		&:hover svg > path {
-			@include transition5;
-			stroke: $main-color;
+			@media (hover: hover) {
+				@include transition5;
+				stroke: $main-color;
+			}
 		}
 	}
 }
