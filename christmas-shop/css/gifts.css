@@ -1,3 +1,4 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
@@ -364,7 +365,8 @@ html {
 
 body {
   background-color: #FFFFFF;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
