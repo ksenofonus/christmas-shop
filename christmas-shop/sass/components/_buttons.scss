@@ -5,7 +5,6 @@
   background-color: $dark;
   border-radius: 20px;
   color: $white;
-  text-decoration: none;
   @include action-small;
   @include transition5;
   &:hover {

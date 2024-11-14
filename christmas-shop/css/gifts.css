@@ -94,6 +94,7 @@ h1, h2, h3, h4, p {
   align-items: center;
   border-radius: 20px;
   padding: 20px;
+  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 .footer_text {
   color: #181C29;
@@ -103,7 +104,6 @@ h1, h2, h3, h4, p {
   font-size: 24px;
   line-height: 152%;
   letter-spacing: 0.16em;
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 
 .media_item > a {
@@ -399,6 +399,11 @@ button {
   margin: 0;
   border: none;
   transition: all 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #181C29;
 }
 
 .main_gifts {

@@ -1,14 +1,14 @@
 .media_item {
-  & > a {
-    display: block;
-    padding: 8px;
-    width: 100%;
-    line-height: 0;
-    @include cursor;
-    @include transition5;
-    &:hover svg  > path{
-      @include transition5;
-stroke: $main-color;
-    }
-  }
+	& > a {
+		display: block;
+		padding: 8px;
+		width: 100%;
+		line-height: 0;
+		@include cursor;
+		@include transition5;
+		&:hover svg > path {
+			@include transition5;
+			stroke: $main-color;
+		}
+	}
 }

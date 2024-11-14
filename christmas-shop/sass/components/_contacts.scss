@@ -8,12 +8,12 @@
     align-items: center;
     border-radius: 20px;
     padding: 20px;
+    @include cursor;
   }
   &_text {
   color: $dark;
   text-decoration: none;
   @include action-large;
-  @include cursor;
   }
 }
 

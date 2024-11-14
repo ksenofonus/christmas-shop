@@ -41,3 +41,7 @@ button {
   border: none;
   @include transition5;
 }
+a {
+  text-decoration: none;
+  color: $dark;
+}
