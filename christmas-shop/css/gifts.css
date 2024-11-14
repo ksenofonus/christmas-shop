@@ -1,3 +1,4 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
@@ -86,7 +87,7 @@ h1, h2, h3, h4, p {
 }
 
 .footer_contacts {
-  flex-basis: 35%;
+  flex-basis: 33.3333333333%;
   display: flex;
   gap: 12px;
   flex-direction: column-reverse;
@@ -364,7 +365,8 @@ html {
 
 body {
   background-color: #FFFFFF;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ul {

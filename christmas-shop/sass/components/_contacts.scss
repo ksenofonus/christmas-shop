@@ -1,6 +1,6 @@
 .footer {
   &_contacts {
-    flex-basis: 35%;
+    flex-basis: calc(100%/3);
     display: flex;
     gap: 12px;
     flex-direction: column-reverse;
