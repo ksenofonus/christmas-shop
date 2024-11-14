@@ -9,10 +9,12 @@
     border-radius: 20px;
     padding: 20px;
     @include cursor;
+    @include transition5;
+    &:hover {
+      color: $main-color;
+    }
   }
   &_text {
-  color: $dark;
-  text-decoration: none;
   @include action-large;
   }
 }
