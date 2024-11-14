@@ -232,6 +232,9 @@ h1, h2, h3, h4, p {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: default;
 }
+.gifts_tabs .gifts_tab:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 .header-container {
   width: 100%;
