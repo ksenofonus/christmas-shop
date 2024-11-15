@@ -458,6 +458,13 @@ li {
 .footer {
   padding: 0 82px;
 }
+@media screen and (max-width: 768px) {
+  .header,
+  .section,
+  .footer {
+    padding: 0 8px;
+  }
+}
 
 .caption__top {
   order: -1;
@@ -469,7 +476,8 @@ li {
 }
 
 .section {
-  padding: 60px 82px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 button {
@@ -486,10 +494,6 @@ a {
 
 .main_home {
   overflow: hidden;
-}
-
-.section {
-  padding: 60px 82px;
 }
 
 .hero {
