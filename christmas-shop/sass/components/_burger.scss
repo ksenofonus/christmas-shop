@@ -1,0 +1,40 @@
+.burger {
+	width: 40px;
+	height: 40px;
+	@include transition5;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: relative;
+	&_item {
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 1px;
+		background-color: $dark;
+		left: 50%;
+		translate: -50% -50%;
+    &:first-child {
+				top: 15px;
+			}
+			&:last-child {
+				bottom: 15px;
+			}
+	}
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+	&__active {
+		.burger_item {
+			top: 50%;
+			left: 50%;
+			translate: -50% -50%;
+			&:first-child {
+				rotate: (45deg);
+			}
+			&:last-child {
+				rotate: (-45deg);
+			}
+		}
+	}
+}
