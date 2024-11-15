@@ -21,7 +21,6 @@ li {
 	margin: 0;
 }
 .header,
-.section,
 .footer {
 	padding: 0 82px;
 	@media screen and (max-width: 768px) {
@@ -37,8 +36,10 @@ li {
 	border-radius: 20px;
 }
 .section {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 60px 82px;
+	@media screen and (max-width: 768px) {
+		padding: 0 8px;
+	}
 }
 button {
   padding: 0;
