@@ -96,7 +96,7 @@
 	
 	background-image: url('../assets/images/bg-forest.png'), url('../assets/images/bg-snow.png');
 	background-repeat: no-repeat;
-	background-position: left, center;
+	background-position: center, center;
 	background-size: cover, cover;
 	&-container {
 		@include flex-column;
