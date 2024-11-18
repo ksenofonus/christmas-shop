@@ -27,7 +27,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.48;
+  line-height: 1.5;
   color: #181C29;
 }
 
@@ -526,7 +526,7 @@ a {
 .cta {
   background-image: url("../assets/images/bg-forest.png"), url("../assets/images/bg-snow.png");
   background-repeat: no-repeat;
-  background-position: left, center;
+  background-position: center, center;
   background-size: cover, cover;
 }
 .cta-container {
