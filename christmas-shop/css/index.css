@@ -217,7 +217,7 @@ h1, h2, h3, h4, p {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  background-color: #FFFFFF;
+  background-color: #ECF3F8;
   overflow: hidden;
   transition: all 0.5s ease;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
@@ -266,6 +266,9 @@ h1, h2, h3, h4, p {
   flex-direction: column;
   gap: 8px;
   padding: 20px;
+  height: 112px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
 }
 
 .logo {
