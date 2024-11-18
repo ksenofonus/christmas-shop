@@ -27,7 +27,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.48;
+  line-height: 1.5;
   color: #181C29;
 }
 
@@ -523,6 +523,14 @@ a {
   background-position: center, left;
   background-size: cover, cover;
 }
+.about_item {
+  width: 50%;
+}
+@media screen and (max-width: 380px) {
+  .about_item {
+    width: 100%;
+  }
+}
 .about-container {
   display: flex;
   width: 100%;
@@ -530,15 +538,24 @@ a {
   overflow: hidden;
   background-color: #FFFFFF;
 }
+@media screen and (max-width: 380px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
 .about-container .caption {
   color: #FF4646;
 }
 .about_text {
-  width: 50%;
   padding: 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 380px) {
+  .about_text {
+    padding: 60px 20px;
+  }
 }
 .about_content {
   max-width: 426px;
@@ -550,7 +567,6 @@ a {
   color: #181C29;
 }
 .about_img {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
