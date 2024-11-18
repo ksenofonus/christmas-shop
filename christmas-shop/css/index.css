@@ -504,7 +504,7 @@ a {
 .hero {
   background-image: url("../assets/images/bg-ball.png"), url("../assets/images/bg-snow.png");
   background-repeat: no-repeat;
-  background-position: center, left;
+  background-position: center, center;
   background-size: cover, cover;
 }
 .hero_container {
