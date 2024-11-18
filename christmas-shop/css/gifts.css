@@ -231,6 +231,11 @@ h1, h2, h3, h4, p {
   gap: 8px;
   background-color: #FF4646;
 }
+@media screen and (max-width: 380px) {
+  .gifts_tabs {
+    gap: 0;
+  }
+}
 .gifts_tabs .gifts_tab {
   font-weight: 600;
   text-transform: uppercase;
@@ -242,6 +247,11 @@ h1, h2, h3, h4, p {
   color: #FFFFFF;
   border-radius: 12px;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
+}
+@media screen and (max-width: 380px) {
+  .gifts_tabs .gifts_tab {
+    padding: 12px 8px;
+  }
 }
 .gifts_tabs .gifts_tab__active {
   background-color: rgba(255, 255, 255, 0.2);
@@ -507,7 +517,7 @@ a {
 .main_gifts {
   background-image: url("../assets/images/bg-garland.png");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
   background-size: contain;
 }
 
