@@ -47,10 +47,11 @@
 	}
 	&_img {
 		width: 50%;
-		& > img {
-			display: block;
-			border-radius: 20px;
-		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 20px;
 	}
 }
 .slider {
@@ -94,7 +95,7 @@
 	
 	background-image: url('../assets/images/bg-forest.png'), url('../assets/images/bg-snow.png');
 	background-repeat: no-repeat;
-	background-position: left, center;
+	background-position: center, center;
 	background-size: cover, cover;
 	&-container {
 		@include flex-column;

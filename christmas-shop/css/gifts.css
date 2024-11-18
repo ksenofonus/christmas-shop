@@ -269,7 +269,7 @@ h1, h2, h3, h4, p {
   translate: -50% -50%;
 }
 .burger_item:first-child {
-  top: 15px;
+  top: 16px;
 }
 .burger_item:last-child {
   bottom: 15px;
@@ -485,7 +485,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .section {
-    padding: 0 8px;
+    padding: 60px 8px;
   }
 }
 
