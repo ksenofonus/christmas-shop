@@ -23,7 +23,7 @@
 	@include snow;
 	&_item {
 		width: 50%;
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 610px) {
 			width: 100%;
 		}
 	}
@@ -33,7 +33,7 @@
 		border-radius: 20px;
 		overflow: hidden;
 		background-color: $white;
-		@media screen and (max-width: 380px) {
+		@media screen and (max-width: 610px) {
 			flex-direction: column;
 		}
 		& .caption {
@@ -44,7 +44,7 @@
 		padding: 0 60px;
 		@include flex-column;
 		justify-content: center;
-		@media screen and (max-width: 380px) {
+		@media screen and (max-width: 610px) {
 			padding: 60px 20px;
 		}
 	}

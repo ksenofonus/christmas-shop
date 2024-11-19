@@ -231,7 +231,7 @@ h1, h2, h3, h4, p {
   gap: 8px;
   background-color: #FF4646;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 415px) {
   .gifts_tabs {
     gap: 0;
   }
@@ -248,7 +248,7 @@ h1, h2, h3, h4, p {
   border-radius: 12px;
   cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 510px) {
   .gifts_tabs .gifts_tab {
     padding: 12px 8px;
   }
@@ -496,7 +496,7 @@ li {
 .section {
   padding: 60px 82px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .section {
     padding: 60px 8px;
   }

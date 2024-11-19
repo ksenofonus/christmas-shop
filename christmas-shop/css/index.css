@@ -479,7 +479,7 @@ li {
 .section {
   padding: 60px 82px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .section {
     padding: 60px 8px;
   }
@@ -529,7 +529,7 @@ a {
 .about_item {
   width: 50%;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 610px) {
   .about_item {
     width: 100%;
   }
@@ -541,7 +541,7 @@ a {
   overflow: hidden;
   background-color: #FFFFFF;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 610px) {
   .about-container {
     flex-direction: column;
   }
@@ -555,7 +555,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 610px) {
   .about_text {
     padding: 60px 20px;
   }
