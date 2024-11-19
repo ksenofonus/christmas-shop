@@ -1,11 +1,13 @@
 .slider {
 	&_content {
+		position: relative;
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: space-between;
 		gap: 21px;
-		width: 1193px;
+		@include transition5;
+		left: 0;
 	}
 	&_item {
 		& > img {
@@ -13,8 +15,6 @@
 			width: 200px;
 			height: 200px;
 			border-radius: 20px;
-		}
-		&__text {
 		}
 	}
 	&_button {
@@ -52,3 +52,4 @@
 		}
 	}
 }
+
