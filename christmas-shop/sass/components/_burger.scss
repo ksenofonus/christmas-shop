@@ -1,12 +1,12 @@
 .burger {
 	width: 40px;
 	height: 40px;
-	@include transition5;
 	justify-content: center;
 	align-items: center;
 	display: none;
 	position: relative;
 	&_item {
+		@include transition5;
 		position: absolute;
 		display: block;
 		width: 20px;
