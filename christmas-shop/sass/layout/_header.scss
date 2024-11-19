@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	&-container {
 		width: 100%;
 		display: flex;
@@ -7,6 +8,7 @@
 		padding-top: 12px;
 		padding-bottom: 12px;
 		text-transform: uppercase;
+		
 	}
 
 	& a {
@@ -42,7 +44,29 @@
 	}
 }
 .main-nav {
+	@include transition5;
 	@media screen and (max-width: 768px) {
-		display: none;
+		translate: 100% 0;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background-color: $white;
+		.main-menu {
+			flex-direction: column;
+		}
+		&__active {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			translate: 0 0;
+			.main-menu_item {
+				text-align: center;
+				a {
+				@include action-large;
+			}
+			}
+		}
 	}
 }
