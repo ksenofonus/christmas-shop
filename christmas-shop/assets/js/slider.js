@@ -7,8 +7,8 @@ let moveCount = 0;
 const stepNumber = () => {
 	let stepNumber;
 	const windowWidth = window.visualViewport.width;
-	if (windowWidth >= 768) stepNumber = 3;
-	if (windowWidth >= 380 && windowWidth < 768) stepNumber = 6;
+	if (windowWidth > 768) stepNumber = 3;
+	if (windowWidth >= 380 && windowWidth <= 768) stepNumber = 6;
 	return stepNumber;
 };
 const stepCalc = () => {
