@@ -1,30 +1,27 @@
-const targetDate = Date.parse(new Date(Date.UTC(2025, 0, 1, 0, 0, 0, 0)));
-const nowDate = Date.parse(new Date().toUTCString()); 
-const dif = targetDate - nowDate; //разница в миллисекундах
-console.log(targetDate, nowDate);
-const day = document.querySelector('.timer_days');
-const hours = document.querySelector('.timer_hours');
-const minutes = document.querySelector('.timer_minutes');
-const seconds = document.querySelector('.timer_seconds');
+const timer = () => {
+	const targetDate = Date.parse(new Date(2025, 0, 1, 0, 0, 0, 0).toUTCString());
+	const nowDate = Date.parse(new Date().toUTCString());
+	const dif = targetDate - nowDate;
+	const day = document.querySelector('.timer_days');
+	const hours = document.querySelector('.timer_hours');
+	const minutes = document.querySelector('.timer_minutes');
+	const seconds = document.querySelector('.timer_seconds');
 
+	const dayNumber = dif / (1000 * 24 * 60 * 60);
+	const hoursNumber = (dayNumber - Math.floor(dayNumber)) * 24;
+	const minutesNumber = (hoursNumber - Math.floor(hoursNumber)) * 60;
+	const secondsNumber = (minutesNumber - Math.floor(minutesNumber)) * 60;
+	if (Math.round(secondsNumber) === 60) {
+		seconds.textContent = '0';
+		minutes.textContent = Math.floor(minutesNumber) + 1;
+	} else {
+		seconds.textContent = Math.round(secondsNumber);
+		minutes.textContent = Math.floor(minutesNumber);
+	}
+	day.textContent = Math.floor(dayNumber);
+	hours.textContent = Math.floor(hoursNumber);
+};
 
-
-
-//1 день = 1000 миллисекунд * 60 секунд * 60 минут * 24 часа
-const resultDays = dif / (1000 * 24 * 60 * 60);
-const getDays = resultDays;
-//1 час = 1/24 дня
-const getHours = (resultDays - Math.floor(getDays)) * 24;
-//1 минута = 1/60 часа
-const getMinutes = (getHours - Math.floor(getHours)) * 60;
-//1 секунда = 1/60 минуты
-const getSecounds = (getMinutes - Math.floor(getMinutes)) * 60;
-
-console.log(
-	dif,
-	Math.floor(getDays),
-	Math.floor(getHours),
-	Math.floor(getMinutes),
-	Math.round(getSecounds),
-);
-
+document.addEventListener('DOMContentLoaded', () => {
+  setInterval(() => timer(), 1000);
+} )
