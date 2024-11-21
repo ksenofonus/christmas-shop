@@ -10,3 +10,7 @@ const switchTabs = () => {
   })
 }
 switchTabs();
+
+const filterGifts = () => {
+  
+}
