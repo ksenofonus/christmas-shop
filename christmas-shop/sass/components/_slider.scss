@@ -42,10 +42,12 @@
 			}
 		}
 		&:not(.slider_button__disabled):hover {
-			background-color: $white;
-			& svg > path {
-				stroke: $main-color;
-				fill: $main-color;
+			@media (hover: hover) {
+				background-color: $white;
+				& svg > path {
+					stroke: $main-color;
+					fill: $main-color;
+				}
 			}
 		}
 	}

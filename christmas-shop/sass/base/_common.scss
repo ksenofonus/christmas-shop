@@ -5,6 +5,8 @@ html {
 	max-width: 1440px;
 	margin: 0 auto;
 	background-color: $white;
+	overflow: hidden;
+	position: relative;
 }
 body {
 	background-color: $white;
@@ -21,9 +23,11 @@ li {
 	margin: 0;
 }
 .header,
-.section,
 .footer {
 	padding: 0 82px;
+	@media screen and (max-width: 768px) {
+		padding: 0 8px;
+	}
 }
 
 .caption__top {
@@ -35,6 +39,9 @@ li {
 }
 .section {
 	padding: 60px 82px;
+	@media screen and (max-width: 800px) {
+		padding: 60px 8px;
+	}
 }
 button {
   padding: 0;
