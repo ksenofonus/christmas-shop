@@ -1,7 +1,7 @@
 const toggleMenu = () => {
 	burger.classList.toggle('burger__active');
 	menu.classList.toggle('main-nav__active');
-  document.body.classList.toggle('no-scroll');
+	document.body.classList.toggle('no-scroll');
 };
 
 const burger = document.querySelector('.burger');
@@ -14,6 +14,6 @@ burger.addEventListener('click', () => {
 
 menuItems.forEach((item) => {
 	item.addEventListener('click', () => {
-		toggleMenu();
-	});
+		if (menu.classList.contains('main-nav__active')) toggleMenu();
+		});
 });
