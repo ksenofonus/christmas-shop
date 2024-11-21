@@ -7,11 +7,29 @@
 		overflow: hidden;
 		@include transition5;
 	}
+	&_image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 310px;
+		height: 230px;
+	}
 	&_content {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 12px;
 		justify-content: center;
+	}
+	&_category {
+		&.for-work {
+				color: $tag-purple;
+			}
+		&.for-harmony {
+				color: $tag-pink;
+			}
+		&.for-health {
+				color: $tag-green;
+			}
 	}
 	&_item {
 		width: 310px;
@@ -25,41 +43,6 @@
 		&:hover .gifts_name {
 			@media (hover: hover) {
 				color: $main-color;
-			}
-		}
-		&.work {
-			& .gifts_function {
-				color: $tag-purple;
-			}
-			& .gifts_image {
-				background-image: url('../assets/images/gift-for-work.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-				width: 310px;
-				height: 230px;
-			}
-		}
-		&.harmony {
-			& .gifts_function {
-				color: $tag-pink;
-			}
-			& .gifts_image {
-				background-image: url('../assets/images/gift-for-harmony.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-			}
-		}
-		&.health {
-			& .gifts_function {
-				color: $tag-green;
-			}
-			& .gifts_image {
-				background-image: url('../assets/images/gift-for-health.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
 			}
 		}
 	}
