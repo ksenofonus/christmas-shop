@@ -163,11 +163,12 @@ h1, h2, h3, h4, p {
   transition: all 0.5s ease;
 }
 .gifts_image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   width: 310px;
   height: 230px;
+}
+.gifts_image > img {
+  width: 100%;
+  display: block;
 }
 .gifts_content {
   display: flex;

@@ -8,11 +8,12 @@
 		@include transition5;
 	}
 	&_image {
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
 		width: 310px;
 		height: 230px;
+		& > img {
+			width: 100%;
+			display: block;
+		}
 	}
 	&_content {
 		display: flex;

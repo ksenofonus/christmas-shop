@@ -1,26 +1,14 @@
 export const createCard = (obj) => {
-  const card = document.createElement('li');
-  card.className = 'gifts_item';
-  card.innerHTML = `
-    <div class='gifts_image'> </div>
+	const category = obj.category.toLocaleLowerCase().split(' ').join('-');
+	const card = document.createElement('li');
+	card.className = 'gifts_item';
+	card.innerHTML = `
+    <div class='gifts_image'><img src='../assets/images/gift-${category}.png')' alt=''> </div>
     <div class='gifts_description'>
-      <h3 class='gifts_name'></h3>
-      <h4 class='gifts_category caption__top'></h4>
+      <h3 class='gifts_name'>${obj.name}</h3>
+      <h4 class='gifts_category caption__top ${category}'>${obj.category}</h4>
     </div>
   `;
-  const image = card.querySelector('.gifts_image');
-  const name = card.querySelector('.gifts_name');
-  const category = card.querySelector('.gifts_category');
-  image.style.backgroundImage = `url('./assets/images/gift-${obj.category
-		.toLocaleLowerCase()
-		.split(' ')
-		.join('-')}.png')`;
-  name.textContent = `${obj.name}`;
-  category.textContent = `${obj.category}`;
-  category.classList.add(`${obj.category
-		.toLocaleLowerCase()
-		.split(' ')
-		.join('-')}`)
-  return card;
-}
-
+  card.setAttribute('data-category', `${category}`);
+	return card;
+};
