@@ -1,6 +1,8 @@
-import { fullList, showCard, giftContainer } from './showGifts.js';
+import { fullList, giftContainer } from './getGiftsData.js';
+import { showCard } from './showGifts.js';
 
 const removeChildren = () => (giftContainer.innerHTML = '');
+
 export const filterGifts = (category) => {
 	if (category !== 'all') {
 		const filterList = fullList.filter(

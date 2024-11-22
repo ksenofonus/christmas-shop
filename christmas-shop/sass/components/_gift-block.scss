@@ -10,6 +10,7 @@
 	&_image {
 		width: 310px;
 		height: 230px;
+		background-color: $bcground-color;
 		& > img {
 			width: 100%;
 			display: block;
@@ -46,11 +47,6 @@
 				color: $main-color;
 			}
 		}
-	}
-	&_image {
-		width: 100%;
-		height: 230px;
-		background-color: $bcground-color;
 	}
 	&_description {
 		@include flex-column;
