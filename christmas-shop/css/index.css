@@ -367,8 +367,8 @@ h1, h2, h3, h4, p {
     width: 56px;
     height: 56px;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 8px;
+    right: 8px;
     border-radius: 50%;
     border: 1px solid #FF4646;
     rotate: -90deg;
