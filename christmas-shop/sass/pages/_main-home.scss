@@ -2,13 +2,10 @@
 	
 	overflow: hidden;
 }
-.section {
-	padding: 60px 82px;
-}
 .hero {
 	background-image: url('../assets/images/bg-ball.png'), url('../assets/images/bg-snow.png');
 	background-repeat: no-repeat;
-	background-position: center, left;
+	background-position: center, center;
 	background-size: cover, cover;
 	&_container {
 		@include flex-column;
@@ -24,23 +21,35 @@
 }
 .about {
 	@include snow;
+	&_item {
+		width: 50%;
+@media screen and (max-width: 610px) {
+			width: 100%;
+		}
+	}
 	&-container {
 		display: flex;
 		width: 100%;
 		border-radius: 20px;
 		overflow: hidden;
 		background-color: $white;
+		@media screen and (max-width: 610px) {
+			flex-direction: column;
+		}
 		& .caption {
 			color: $main-color;
 		}
 	}
 	&_text {
-		width: 50%;
-		padding: 100px 0 100px 60px;
+		padding: 0 60px;
+		@include flex-column;
+		justify-content: center;
+		@media screen and (max-width: 610px) {
+			padding: 60px 20px;
+		}
 	}
 	&_content {
 		max-width: 426px;
-		padding: 60px 0;
 		@include flex-column;
 		gap: 20px;
 		& > h2 {
@@ -48,11 +57,11 @@
 		}
 	}
 	&_img {
-		width: 50%;
-		& > img {
-			display: block;
-			border-radius: 20px;
-		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 20px;
 	}
 }
 .slider {
