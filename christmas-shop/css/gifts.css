@@ -175,9 +175,11 @@ h1, h2, h3, h4, p {
   background-color: #ECF3F8;
   overflow: hidden;
   transition: all 0.5s ease;
-  cursor: url("../assets/images/icons/cursors.png"), pointer;
 }
 @media (hover: hover) {
+  .gifts_item:hover {
+    cursor: url("../assets/images/icons/cursors.png"), pointer;
+  }
   .gifts_item:hover .gifts_name {
     color: #FF4646;
   }

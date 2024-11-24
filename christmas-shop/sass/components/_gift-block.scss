@@ -21,10 +21,12 @@
 		background-color: $bcground-color;
 		overflow: hidden;
 		@include transition5;
-		@include cursor;
-		&:hover .gifts_name {
+		&:hover {
 			@media (hover: hover) {
-				color: $main-color;
+				@include cursor;
+				.gifts_name {
+					color: $main-color;
+				}
 			}
 		}
 		&.work {
