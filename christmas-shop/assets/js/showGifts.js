@@ -1,7 +1,8 @@
 
 import { giftContainer, fullList } from './getGiftsData.js'
 import { createCard, createModal } from './createCard.js';
-import { createBack, removeBack } from './back.js';
+import { createBack } from './back.js';
+import { closeModal } from './closeModal.js';
 
 
 export const showCard = (number = fullList.length, list = fullList) => {
@@ -12,11 +13,14 @@ export const showCard = (number = fullList.length, list = fullList) => {
 
 export const showModal = (list = fullList) => {
 	const gifts = document.querySelectorAll('.gifts_item');
-	console.log(gifts)
 	gifts.forEach((item, index) => {
 		item.addEventListener('click', () => {
 			document.body.append(createModal(list[index]));
 			createBack();
+			closeModal();
 		})
 	})
+	
 };
+showCard();
+showModal();

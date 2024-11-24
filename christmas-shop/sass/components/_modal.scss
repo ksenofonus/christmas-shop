@@ -10,10 +10,10 @@
 	z-index: 3;
 	background-color: $bcground-color;
 	&_image {
-    height: 230px;
+		height: 230px;
 		background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+		background-repeat: no-repeat;
+		background-size: 100%;
 	}
 	&_title {
 		@include flex-column;
@@ -30,28 +30,28 @@
 			color: $tag-green;
 		}
 	}
-  &_powers {
-    & > h4 {
-      margin-bottom: 8px;
-    }
-  }
-  .power_name {
-    text-transform: capitalize;
-  }
+	&_powers {
+		& > h4 {
+			margin-bottom: 8px;
+		}
+	}
+	.power_name {
+		text-transform: capitalize;
+	}
 	.power-list {
 		&_item {
 			display: flex;
-      justify-content: flex-end;
-      gap: 12px;
-      align-items: center;
-      & > span:first-child {
-        margin-right: auto;
-      }
+			justify-content: flex-end;
+			gap: 12px;
+			align-items: center;
+			& > span:first-child {
+				margin-right: auto;
+			}
 		}
-    &_rating {
-      display: flex;
-      gap: 8px;
-    }
+		&_rating {
+			display: flex;
+			gap: 8px;
+		}
 	}
 	&_content {
 		@include flex-column;
@@ -60,24 +60,24 @@
 		border-radius: 20px;
 		background-color: $white;
 	}
-  .rating_item {
-    width: 16px;
-    height: 16px;
-    &__opacity {
-      opacity: 0.1;
-    }
-    & > img {
-      width: 100%;
-    }
-  }
-  &_close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    @media (hover: hover) {
-      @include cursor;
-    }
-  }
+	.rating_item {
+		width: 16px;
+		height: 16px;
+		&__opacity {
+			opacity: 0.1;
+		}
+		& > img {
+			width: 100%;
+		}
+	}
+	&_close {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		@media (hover: hover) {
+			@include cursor;
+		}
+	}
 }
