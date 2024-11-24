@@ -20,7 +20,5 @@ export const showModal = (list = fullList) => {
 			closeModal();
 		})
 	})
-	
 };
-showCard();
-showModal();
+showModal()

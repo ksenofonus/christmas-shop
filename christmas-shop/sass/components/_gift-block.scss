@@ -24,14 +24,14 @@
 	}
 	&_category {
 		&.for-work {
-				color: $tag-purple;
-			}
+			color: $tag-purple;
+		}
 		&.for-harmony {
-				color: $tag-pink;
-			}
+			color: $tag-pink;
+		}
 		&.for-health {
-				color: $tag-green;
-			}
+			color: $tag-green;
+		}
 	}
 	&_item {
 		width: 310px;
@@ -41,10 +41,12 @@
 		background-color: $bcground-color;
 		overflow: hidden;
 		@include transition5;
-		@include cursor;
-		&:hover .gifts_name {
+		&:hover {
 			@media (hover: hover) {
-				color: $main-color;
+				@include cursor;
+				.gifts_name {
+					color: $main-color;
+				}
 			}
 		}
 	}
