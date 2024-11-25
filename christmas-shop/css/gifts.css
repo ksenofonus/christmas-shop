@@ -298,24 +298,23 @@ h1, h2, h3, h4, p {
   rotate: -45deg;
 }
 
+.button_top {
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid #FF4646;
+  rotate: -90deg;
+  background-color: #FFFFFF;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  translate: all 0.5s ease;
+}
 @media screen and (max-width: 768px) {
-  .button_top {
-    width: 56px;
-    height: 56px;
-    position: fixed;
-    bottom: 8px;
-    right: 8px;
-    border-radius: 50%;
-    border: 1px solid #FF4646;
-    rotate: -90deg;
-    background-color: #FFFFFF;
-    z-index: 3;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    translate: all 0.5s ease;
-    cursor: url("../assets/images/icons/cursors.png"), pointer;
-  }
   .button_top > svg path {
     stroke: #FF4646;
   }
@@ -323,6 +322,7 @@ h1, h2, h3, h4, p {
     display: flex;
   }
 }
+
 .back {
   min-width: 100vw;
   min-height: 100vh;
