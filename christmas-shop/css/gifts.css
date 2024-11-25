@@ -470,6 +470,7 @@ h1, h2, h3, h4, p {
   border-radius: 12px;
   cursor: default;
 }
+
 .main-nav {
   transition: all 0.5s ease;
 }
@@ -554,6 +555,7 @@ h1, h2, h3, h4, p {
   border-radius: 12px;
   cursor: default;
 }
+
 .main-nav {
   transition: all 0.5s ease;
 }

@@ -51,3 +51,10 @@ leftBtn.addEventListener('click', () => {
 	if (moveCount === 0) disableBtn(leftBtn);
 	if (moveCount >= 0) toLeft();
 });
+
+window.addEventListener('resize', () => {
+	slider.style.left = 0;
+	moveCount = 0;
+	disableBtn(leftBtn);
+	enableBtn(rightBtn);
+})
