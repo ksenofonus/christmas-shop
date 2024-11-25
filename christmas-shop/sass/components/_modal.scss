@@ -4,11 +4,14 @@
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;
-	max-width: 400px;
+	width: 400px;
 	border-radius: 20px;
 	overflow: hidden;
 	z-index: 3;
 	background-color: $bcground-color;
+	@media screen and (max-width: 416px) {
+		width: 364px;
+	}
 	&_image {
 		height: 230px;
 		background-position: center;

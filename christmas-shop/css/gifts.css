@@ -339,11 +339,16 @@ h1, h2, h3, h4, p {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  max-width: 400px;
+  width: 400px;
   border-radius: 20px;
   overflow: hidden;
   z-index: 3;
   background-color: #ECF3F8;
+}
+@media screen and (max-width: 416px) {
+  .modal {
+    width: 364px;
+  }
 }
 .modal_image {
   height: 230px;
