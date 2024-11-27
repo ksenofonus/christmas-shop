@@ -311,15 +311,16 @@ h1, h2, h3, h4, p {
   z-index: 3;
   align-items: center;
   justify-content: center;
-  display: none;
-  translate: all 0.5s ease;
+  display: flex;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .button_top > svg path {
     stroke: #FF4646;
   }
   .button_top__active {
-    display: flex;
+    opacity: 1;
   }
 }
 
