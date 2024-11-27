@@ -49,7 +49,7 @@
 .main-nav {
 	@media screen and (max-width: 768px) {
 		@include transition5;
-		width: 0;
+		width: 100%;
 		height: 100%;
 		position: fixed;
 		top: 0;
