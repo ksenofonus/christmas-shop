@@ -7,11 +7,31 @@
 		overflow: hidden;
 		@include transition5;
 	}
+	&_image {
+		width: 310px;
+		height: 230px;
+		background-color: $bcground-color;
+		& > img {
+			width: 100%;
+			display: block;
+		}
+	}
 	&_content {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 12px;
 		justify-content: center;
+	}
+	&_category {
+		&.for-work {
+			color: $tag-purple;
+		}
+		&.for-harmony {
+			color: $tag-pink;
+		}
+		&.for-health {
+			color: $tag-green;
+		}
 	}
 	&_item {
 		width: 310px;
@@ -29,46 +49,6 @@
 				}
 			}
 		}
-		&.work {
-			& .gifts_function {
-				color: $tag-purple;
-			}
-			& .gifts_image {
-				background-image: url('../assets/images/gift-for-work.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-				width: 310px;
-				height: 230px;
-			}
-		}
-		&.harmony {
-			& .gifts_function {
-				color: $tag-pink;
-			}
-			& .gifts_image {
-				background-image: url('../assets/images/gift-for-harmony.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-			}
-		}
-		&.health {
-			& .gifts_function {
-				color: $tag-green;
-			}
-			& .gifts_image {
-				background-image: url('../assets/images/gift-for-health.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-			}
-		}
-	}
-	&_image {
-		width: 100%;
-		height: 230px;
-		background-color: $bcground-color;
 	}
 	&_description {
 		@include flex-column;

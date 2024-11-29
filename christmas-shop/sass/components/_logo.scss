@@ -5,6 +5,8 @@
 	gap: 8px;
 	padding: 8px 20px;
 	@include action-small;
+	position: relative;
+	z-index: 2;
 	&:hover {
 		@media (hover: hover) {
 			@include cursor;

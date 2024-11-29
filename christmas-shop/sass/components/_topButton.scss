@@ -1,0 +1,25 @@
+.button_top {
+	width: 56px;
+	height: 56px;
+	position: fixed;
+	bottom: 8px;
+	right: 8px;
+	border-radius: 50%;
+	border: 1px solid $main-color;
+	rotate: -90deg;
+	background-color: $white;
+	z-index: 3;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	opacity: 0;
+	@include transition5;
+	@media screen and (max-width: 768px) {
+		& > svg path {
+			stroke: $main-color;
+		}
+		&__active {
+			opacity: 1;
+		}
+	}
+}
