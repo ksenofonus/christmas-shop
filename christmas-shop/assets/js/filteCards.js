@@ -1,6 +1,6 @@
 import { filterGifts } from './filterList.js';
 
-const switchTabs = () => {
+const filterCards = () => {
 	const tabButtons = document.querySelectorAll('.gifts_tab');
 	tabButtons.forEach((item) => {
 		item.addEventListener('click', () => {
@@ -13,6 +13,6 @@ const switchTabs = () => {
 		});
 	});
 };
-switchTabs();
+filterCards();
 
 

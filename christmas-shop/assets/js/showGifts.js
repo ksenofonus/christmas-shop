@@ -21,4 +21,4 @@ export const showModal = (list = fullList) => {
 		})
 	})
 };
-showModal()
+showModal();
