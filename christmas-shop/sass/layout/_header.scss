@@ -28,7 +28,7 @@
 			@media screen and (max-width: 768px) {
 				@include action-large;
 			}
-			&:hover {
+			&:not(.main-menu_item__active a):hover {
 				@media (hover: hover) {
 					background-color: $main-color10;
 					color: $main-color;

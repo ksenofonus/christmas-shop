@@ -468,7 +468,7 @@ h1, h2, h3, h4, p {
   }
 }
 @media (hover: hover) {
-  .main-menu_item a:hover {
+  .main-menu_item a:not(.main-menu_item__active a):hover {
     background-color: rgba(255, 70, 70, 0.1);
     color: #FF4646;
     border-radius: 12px;
@@ -550,7 +550,7 @@ h1, h2, h3, h4, p {
   }
 }
 @media (hover: hover) {
-  .main-menu_item a:hover {
+  .main-menu_item a:not(.main-menu_item__active a):hover {
     background-color: rgba(255, 70, 70, 0.1);
     color: #FF4646;
     border-radius: 12px;
