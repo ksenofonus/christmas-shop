@@ -3,7 +3,7 @@ export const createCard = (obj) => {
 	const card = document.createElement('li');
 	card.className = 'gifts_item';
 	card.innerHTML = `
-    <div class='gifts_image'><img src='./assets/images/gift-${category}.png')' alt='${obj.name}'> </div>
+    <div class='gifts_image'><img src='./assets/images/gift-${category}.png' alt='${obj.name}'> </div>
     <div class='gifts_description'>
       <h3 class='gifts_name'>${obj.name}</h3>
       <h4 class='gifts_category caption__top ${category}'>${obj.category}</h4>

@@ -375,7 +375,7 @@ h1, h2, h3, h4, p {
   border: 1px solid #FF4646;
   rotate: -90deg;
   background-color: #FFFFFF;
-  z-index: 3;
+  z-index: 1;
   align-items: center;
   justify-content: center;
   display: flex;
