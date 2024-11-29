@@ -5,6 +5,12 @@
 	align-items: center;
 	display: none;
 	position: relative;
+	z-index: 2;
+	&:hover {
+		@media (hover:hover) {
+			@include cursor;
+		}
+	}
 	&_item {
 		@include transition5;
 		position: absolute;
