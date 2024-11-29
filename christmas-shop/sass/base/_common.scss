@@ -28,7 +28,7 @@ li {
 .header,
 .footer {
 	padding: 0 82px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1000px) {
 		padding: 0 8px;
 	}
 }
@@ -42,7 +42,7 @@ li {
 }
 .section {
 	padding: 60px 82px;
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1000px) {
 		padding: 60px 8px;
 	}
 }
