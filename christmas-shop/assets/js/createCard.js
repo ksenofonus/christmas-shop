@@ -3,7 +3,7 @@ export const createCard = (obj) => {
 	const card = document.createElement('li');
 	card.className = 'gifts_item';
 	card.innerHTML = `
-    <div class='gifts_image'><img src='../assets/images/gift-${category}.png')' alt='${obj.name}'> </div>
+    <div class='gifts_image'><img src='./assets/images/gift-${category}.png')' alt='${obj.name}'> </div>
     <div class='gifts_description'>
       <h3 class='gifts_name'>${obj.name}</h3>
       <h4 class='gifts_category caption__top ${category}'>${obj.category}</h4>
@@ -22,7 +22,7 @@ export const createModal = (obj) => {
 	image.className = 'modal_image';
 	content.className = 'modal_content';
 	powerList.className = 'modal_power';
-	image.style.backgroundImage = `url('../assets/images/gift-${category}.png')`;
+	image.style.backgroundImage = `url('./assets/images/gift-${category}.png')`;
 	content.innerHTML = `<div class='modal_title'>
     <h3 class='gifts_name'>${obj.name}</h3>
       <h4 class='gifts_category caption__top ${category}'>${obj.category}</h4>
@@ -43,7 +43,7 @@ export const createModal = (obj) => {
 			const ratingItem = document.createElement('div');
 			ratingItem.className = 'rating_item';
 			if (j >= activeItem) ratingItem.classList.add('rating_item__opacity');
-			ratingItem.innerHTML = `<img src='../assets/images/icons/snowflake.svg' alt='*'>`;
+			ratingItem.innerHTML = `<img src='./assets/images/icons/snowflake.svg' alt='*'>`;
 			rating.append(ratingItem);
 		}
 		powerItem.append(rating);
