@@ -402,9 +402,8 @@ h1, h2, h3, h4, p {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.5;
   z-index: 2;
-  background-color: #000;
+  background-color: rgba(24, 28, 41, 0.8);
 }
 
 .modal {
