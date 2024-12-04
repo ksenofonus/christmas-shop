@@ -1,4 +1,4 @@
-const targetDate = new Date(Date.UTC(2025, 0, 1, 11, 59, 59, 0));
+const targetDate = Date.parse(new Date(Date.UTC(2024, 11, 31, 23, 59, 59)));
 let timerid = null;
 const day = document.querySelector('.timer_days');
 const hours = document.querySelector('.timer_hours');
