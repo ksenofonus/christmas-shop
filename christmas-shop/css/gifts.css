@@ -504,6 +504,7 @@ h1, h2, h3, h4, p {
   .main-nav__active {
     right: 0;
     width: 100vw;
+    height: calc(100vh - 64px);
   }
 }
 
@@ -586,6 +587,7 @@ h1, h2, h3, h4, p {
   .main-nav__active {
     right: 0;
     width: 100vw;
+    height: calc(100vh - 64px);
   }
 }
 
