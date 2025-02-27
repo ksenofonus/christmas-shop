@@ -1,0 +1,16 @@
+.button {
+	display: block;
+	padding: 20px 32px;
+	background-color: $dark;
+	border-radius: 20px;
+	color: $white;
+	@include action-small;
+	@include transition5;
+	&:hover {
+		@media (hover: hover) {
+			@include cursor;
+			background-color: $white;
+			color: $dark;
+		}
+	}
+}

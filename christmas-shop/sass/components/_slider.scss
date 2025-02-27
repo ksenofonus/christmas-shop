@@ -1,0 +1,55 @@
+.slider {
+	&_content {
+		position: relative;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 21px;
+		@include transition5;
+		left: 0;
+	}
+	&_item {
+		& > img {
+			display: block;
+			width: 200px;
+			height: 200px;
+			border-radius: 20px;
+		}
+	}
+	&_button {
+		width: 56px;
+		height: 56px;
+		border-radius: 20px;
+		border: 1px solid $white;
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include cursor;
+		& svg > path {
+			stroke: $white;
+			fill: $white;
+		}
+		&__left {
+			rotate: 180deg;
+		}
+		&__disabled {
+			border-color: $white40;
+			cursor: default;
+			& > svg {
+				opacity: 40%;
+			}
+		}
+		&:not(.slider_button__disabled):hover {
+			@media (hover: hover) {
+				background-color: $white;
+				& svg > path {
+					stroke: $main-color;
+					fill: $main-color;
+				}
+			}
+		}
+	}
+}
+

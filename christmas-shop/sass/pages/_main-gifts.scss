@@ -1,0 +1,26 @@
+.main_gifts {
+	background-image: url('../assets/images/bg-garland.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+}
+
+.gifts {
+	&-container {
+		@include flex-column;
+		gap: 20px;
+		align-items: center;
+		& .caption {
+			color: $white;
+		}
+	}
+	&_title {
+		@include flex-column;
+		gap: 12px;
+		align-items: center;
+	}
+}
+.section-title {
+  max-width: 426px;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+@mixin header-font {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@mixin action-small {
+	@include header-font;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+}
+@mixin action-large {
+	@include header-font;
+	font-size: 24px;
+	line-height: 152%;
+	letter-spacing: 0.16em;
+}
+
+@mixin cursor {
+  cursor: url('../assets/images/icons/cursors.png'), pointer;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+@mixin transition5 {
+	transition: all 0.5s ease;
+}
+@mixin snow {
+	background-image: url('../assets/images/bg-snow.png');
+	background-repeat: no-repeat;
+	background-position: center, left;
+	background-size: cover, cover;
+}

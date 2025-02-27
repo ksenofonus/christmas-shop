@@ -1,0 +1,30 @@
+.timer {
+	@include flex-column;
+	gap: 8px;
+	align-items: center;
+	& .caption {
+		color: $white;
+	}
+	& > ul {
+		display: flex;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.4);
+		padding: 8px 12px 12px;
+	}
+	&_item {
+		width: 80px;
+		color: $white;
+		text-align: center;
+		position: relative;
+		&:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 20px;
+			background: rgba(255, 255, 255, 0.4);
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+}
