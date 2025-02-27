@@ -1,0 +1,122 @@
+.main_home {
+	
+	overflow: hidden;
+}
+.hero {
+	background-image: url('../assets/images/bg-ball.png'), url('../assets/images/bg-snow.png');
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-size: cover, cover;
+	&_container {
+		@include flex-column;
+		align-items: center;
+		gap: 12px;
+		max-width: 430px;
+		margin: 0 auto;
+		padding: 60px 0;
+		& .caption {
+			color: $white;
+		}
+	}
+}
+.about {
+	@include snow;
+	&_item {
+		width: 50%;
+@media screen and (max-width: 610px) {
+			width: 100%;
+		}
+	}
+	&-container {
+		display: flex;
+		width: 100%;
+		border-radius: 20px;
+		overflow: hidden;
+		background-color: $white;
+		@media screen and (max-width: 610px) {
+			flex-direction: column;
+		}
+		& .caption {
+			color: $main-color;
+		}
+	}
+	&_text {
+		padding: 0 60px;
+		@include flex-column;
+		justify-content: center;
+		@media screen and (max-width: 610px) {
+			padding: 60px 20px;
+		}
+	}
+	&_content {
+		max-width: 426px;
+		@include flex-column;
+		gap: 20px;
+		& > h2 {
+			color: $dark;
+		}
+	}
+	&_img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 20px;
+	}
+}
+.slider {
+	@include snow;
+	&-container {
+		@include flex-column;
+		width: 100%;
+		gap: 20px;
+		overflow: visible;
+	}
+	&_title {
+		@include flex-column;
+		align-items: center;
+		color: $white;
+		gap: 12px;
+	}
+	&_buttons {
+		display: flex;
+		justify-content: flex-end;
+		gap: 20px;
+	}
+}
+
+.gifts {
+	@include snow;
+	&-container {
+		@include flex-column;
+		gap: 20px;
+		align-items: center;
+		& .caption {
+			color: $white;
+		}
+	}
+	&_title {
+		@include flex-column;
+		gap: 12px;
+		align-items: center;
+	}
+}
+.cta {
+	
+	background-image: url('../assets/images/bg-forest.png'), url('../assets/images/bg-snow.png');
+	background-repeat: no-repeat;
+	background-position: center, center;
+	background-size: cover, cover;
+	&-container {
+		@include flex-column;
+		align-items: center;
+		gap: 20px;
+		max-width: 426px;
+		margin: 0 auto;
+		padding: 120px 0 120px;
+		& h2 {
+			text-align: center;
+		}
+	}
+}
+

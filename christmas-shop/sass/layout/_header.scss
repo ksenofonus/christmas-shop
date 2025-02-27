@@ -1,0 +1,74 @@
+.header {
+	position: relative;
+	&-container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-transform: uppercase;
+	}
+
+	& a {
+		text-decoration: none;
+		color: $dark;
+	}
+}
+.main-menu {
+	display: flex;
+	gap: 8px;
+	&_item {
+		& a {
+			@include action-small;
+			display: block;
+			width: auto;
+			padding: 12px 20px;
+			@include transition5;
+			@media screen and (max-width: 768px) {
+				@include action-large;
+			}
+			&:not(.main-menu_item__active a):hover {
+				@media (hover: hover) {
+					background-color: $main-color10;
+					color: $main-color;
+					border-radius: 12px;
+					@include cursor;
+				}
+			}
+		}
+		&__active a {
+			background-color: $main-color10;
+			color: $main-color;
+			border-radius: 12px;
+			cursor: default;
+		}
+	}
+}
+
+.main-nav {
+	@media screen and (max-width: 768px) {
+		@include transition5;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 64px;
+		right: -100%;
+		z-index: 1;
+		background-color: $white;
+		flex-wrap: wrap;
+		overflow-y: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.main-menu {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__active {
+			right: 0;
+			width: 100vw;
+			height: calc(100vh - 64px);
+		}
+	}
+}

@@ -1,0 +1,86 @@
+@import '../components/back';
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	width: 400px;
+	border-radius: 20px;
+	overflow: hidden;
+	z-index: 3;
+	background-color: $bcground-color;
+	@media screen and (max-width: 416px) {
+		width: 364px;
+	}
+	&_image {
+		height: 230px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	&_title {
+		@include flex-column;
+		gap: 8px;
+	}
+	&_category {
+		&.for-work {
+			color: $tag-purple;
+		}
+		&.for-harmony {
+			color: $tag-pink;
+		}
+		&.for-health {
+			color: $tag-green;
+		}
+	}
+	&_powers {
+		& > h4 {
+			margin-bottom: 8px;
+		}
+	}
+	.power_name {
+		text-transform: capitalize;
+	}
+	.power-list {
+		&_item {
+			display: flex;
+			justify-content: flex-end;
+			gap: 12px;
+			align-items: center;
+			& > span:first-child {
+				margin-right: auto;
+			}
+		}
+		&_rating {
+			display: flex;
+			gap: 8px;
+		}
+	}
+	&_content {
+		@include flex-column;
+		gap: 20px;
+		padding: 20px;
+		border-radius: 20px;
+		background-color: $white;
+	}
+	.rating_item {
+		width: 16px;
+		height: 16px;
+		&__opacity {
+			opacity: 0.1;
+		}
+		& > img {
+			width: 100%;
+		}
+	}
+	&_close {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		@media (hover: hover) {
+			@include cursor;
+		}
+	}
+}

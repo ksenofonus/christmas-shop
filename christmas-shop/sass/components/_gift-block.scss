@@ -1,0 +1,61 @@
+.gifts {
+	&_name {
+		display: -webkit-box;
+		line-clamp: 2;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		@include transition5;
+	}
+	&_image {
+		width: 310px;
+		height: 230px;
+		background-color: $bcground-color;
+		& > img {
+			width: 100%;
+			display: block;
+		}
+	}
+	&_content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		justify-content: center;
+	}
+	&_category {
+		&.for-work {
+			color: $tag-purple;
+		}
+		&.for-harmony {
+			color: $tag-pink;
+		}
+		&.for-health {
+			color: $tag-green;
+		}
+	}
+	&_item {
+		width: 310px;
+		height: 342px;
+		@include flex-column;
+		border-radius: 20px;
+		background-color: $bcground-color;
+		overflow: hidden;
+		@include transition5;
+		&:hover {
+			@media (hover: hover) {
+				@include cursor;
+				.gifts_name {
+					color: $main-color;
+				}
+			}
+		}
+	}
+	&_description {
+		@include flex-column;
+		gap: 8px;
+		padding: 20px;
+		height: 112px;
+		border-radius: 20px;
+		background-color: $white;
+	}
+}

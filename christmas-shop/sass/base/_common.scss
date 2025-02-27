@@ -1,0 +1,58 @@
+html {
+	scroll-behavior: smooth;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: $white;
+	overflow: hidden;
+	position: relative;
+}
+body {
+	background-color: $white;
+	margin: 0;
+	padding: 0;
+}
+.no-scroll {
+	overflow-y: hidden;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	padding: 0;
+	margin: 0;
+}
+.header,
+.footer {
+	padding: 0 82px;
+	@media screen and (max-width: 1000px) {
+		padding: 0 8px;
+	}
+}
+
+.caption__top {
+	order: -1;
+}
+.main {
+	background-color: $main-color;
+	border-radius: 20px;
+}
+.section {
+	padding: 60px 82px;
+	@media screen and (max-width: 1000px) {
+		padding: 60px 8px;
+	}
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  @include transition5;
+}
+a {
+  text-decoration: none;
+  color: $dark;
+}
